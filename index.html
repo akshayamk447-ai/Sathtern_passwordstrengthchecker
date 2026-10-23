@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Password Strength Checker</h1>
+    <p>Check your password and learn how to make it stronger.</p>
+
+    <label for="password">Enter a test password</label>
+    <div class="input-row">
+      <input id="password" type="password" placeholder="Type a sample password">
+      <button id="toggle" type="button">Show</button>
+    </div>
+
+    <div class="meter">
+      <div id="meterFill"></div>
+    </div>
+    <h2 id="strength">Waiting for input</h2>
+    <p id="score">Score: 0/100</p>
+
+    <h3>Security checklist</h3>
+    <ul id="checklist">
+      <li id="length">○ At least 12 characters</li>
+      <li id="upper">○ Uppercase letter</li>
+      <li id="lower">○ Lowercase letter</li>
+      <li id="number">○ Number</li>
+      <li id="symbol">○ Symbol</li>
+    </ul>
+
+    <p id="feedback">Enter a sample password to begin.</p>
+
+    <hr>
+    <h2>Password Generator</h2>
+    <p id="generated">Click generate to create a password.</p>
+    <button id="generate" type="button">Generate Password</button>
+    <button id="copy" type="button">Copy Password</button>
+  </main>
+</body>
+</html>
